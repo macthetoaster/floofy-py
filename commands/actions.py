@@ -24,7 +24,7 @@ MENTION_REGEX = re.compile(r"(<@!?(\d{17,19})>)")
 
 
 class Actions(Scale):
-    def __init__(self, bot):
+    def __init__(self, bot: Snake):
         self.bot: Snake = bot
 
         self.furpiles: dict[int, set[int]] = {}
@@ -46,7 +46,7 @@ class Actions(Scale):
         receivers = self._get_receivers(msg, " ".join(args))
 
         if receivers is None:
-            self_reply = actions[action]["self"]
+            self_reply = f"{actions[action]['self']} {actions[action]['emoji']}"
             return await msg.channel.send(self_reply.format(user=f"**{user}**"))
 
         action_reply = choice(actions[action]["with_receivers"])

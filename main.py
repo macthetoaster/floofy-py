@@ -26,6 +26,11 @@ async def on_startup():
     await bot.change_presence(activity="with new features!")
 
 
-bot.grow_scale("commands.actions")
+def main():
+    print("⌚ Floofy is starting...")
+    bot.grow_scale("commands.actions")
+    bot.start(discord_token)
 
-bot.start(discord_token)
+
+if __name__ == "__main__":
+    main()
