@@ -88,7 +88,7 @@ actions = {
     },
     "slap": {
         "self": "{user} slaps themselves across the face! Ouchies!",
-        "emoji": "<:meow_angryintensifies:960689339828936745>",
+        "emoji": "<a:meow_angryintensifies:960689339828936745>",
         "with_receivers": [
             "{user} slaps {receivers}!",
             "{user} smacks {receivers} across the face!",
