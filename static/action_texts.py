@@ -8,7 +8,7 @@ actions = {
             "{user} runs towards {receivers} and boops them!",
             "{user} gently boops {receivers} on their snoot",
             "{user} boops {receivers} on the snoot!",
-            "{user} approaches {receivers} and gives them a big boop!"
+            "{user} approaches {receivers} and gives them a big boop!",
             "{user} walks towards {receivers}, waits a sec, and boops them!"
         ]
     },
