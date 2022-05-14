@@ -29,6 +29,8 @@ class Actions(Scale):
 
         self.furpiles: dict[int, set[int]] = {}
 
+    # For the actions to be dynamic, this needs to be an event listener. If not, each action would need to be its
+    # own command.
     @listen()
     async def on_message_create(self, event: MessageCreate):
         msg = event.message
@@ -38,6 +40,7 @@ class Actions(Scale):
 
         command, *args = msg.content.split()
         action = command[2:]
+        action = action.lower()
 
         if actions.get(action) is None:
             return
@@ -46,7 +49,7 @@ class Actions(Scale):
         receivers = self._get_receivers(msg, " ".join(args))
 
         if receivers is None:
-            self_reply = f"{actions[action]['self']} {actions[action]['emoji']}"
+            self_reply = f"> {actions[action]['self']} {actions[action]['emoji']}"
             return await msg.channel.send(self_reply.format(user=f"**{user}**"))
 
         action_reply = choice(actions[action]["with_receivers"])
@@ -54,7 +57,7 @@ class Actions(Scale):
         formatted_reply = action_reply.format(user=f"**{user}**", receivers=receivers)
 
         await msg.channel.send(
-            f"{formatted_reply} {action_emoji}",
+            f"> {formatted_reply} {action_emoji}",
             allowed_mentions=AllowedMentions.none()
         )
 

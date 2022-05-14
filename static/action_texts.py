@@ -98,6 +98,33 @@ actions = {
             "{user} slaps {receivers} leaving a big red mark! Ow!",
             "{user} gives {receivers} a real good slappin'!"
         ]
+    },
+    "bite": {
+        "self": "{user} bites their own arm! Ouchies!",
+        "emoji": "<:meow_nom:975066852969549854>",
+        "with_receivers": [
+            "{user} slowly gets closer to {receivers} and bites them!",
+            "{user} softly nibbles {receivers}!",
+            "{user} bites {receivers}",
+            "{user} sneaks towards {receivers} and chomps them! Rawr!",
+            "{user} munches on {receivers}!",
+            "{user} taps {receivers} on the shoulder and nibbles them!",
+            "{user} gives {receivers} a big monch!",
+            "{user} runs towards {receivers} and bites them!",
+            "{user} softly bites {receivers}"
+        ]
+    },
+    "snuggle": {
+        "self": "{user} snuggles a soft, warm pillow! Awwwww~",
+        "emoji": "<:meow_heart2:975067464117399593>",
+        "with_receivers": [
+            "{user} taps {receivers} on the shoulder and snuggles them!",
+            "{user} snuggles {receivers}! So comfy~",
+            "{user} gets close to {receivers} and gives them a big, warm snuggle~",
+            "{user} walks towards {receivers} and snuggles them tight!",
+            "{user} shyly snuggles {receivers}, so soft!",
+            "{user} envelops {receivers} in their floof and snuggles them!"
+        ]
     }
 }
 
