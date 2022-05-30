@@ -1,9 +1,41 @@
-# Floofy!
+# FloofyBot
 
-Floofy is a furry Discord bot, with reaction commands to interact with your favorite floofs! It's coded in Python with
-[Dis-Snek](https://dis-snek.readthedocs.io/) ❤, go ahead and check them out because they're doing an awesome service to
-the Discord bot community!
 
-## Work in Progress
-We're currently working on adding more commands and stuff to make the bot more useful and fun for everyone! We're also
-going to be writing some more info about self-hosting your bot down below when we get the time and/or chance.
+A discord bot made with [NAFF](https://github.com/Discord-Snake-Pit/NAFF).
+Visit [the official guide](https://naff.readthedocs.io/Guides/01%20Getting%20Started/) to get started.
+
+# Running the Application
+There are multiple ways to launch the application.
+
+
+### Python
+To start the bot with python, you first need to install the required packages with either `poetry install` or `pip install -r requirements.txt` 
+
+
+Then, run:
+
+1) `python main.py`
+
+
+### Docker-Compose
+You can use the pre-made docker-compose by running:
+
+1) `docker-compose up`
+
+### Docker
+For most users, the use of `docker-compose` is highly recommended.
+
+Nevertheless, you can import the pre-made Dockerfile into your own docker-compose or run it manually by with:
+
+1) `docker build -t your_project_name .`
+2) `docker run -it your_project_name`
+
+Note: Make sure that you created a volume so that you local `./logs` folder gets populated.
+
+# Additional Information
+Additionally, this comes with a pre-made [pre-commit](https://pre-commit.com) config to keep your code clean. 
+
+It is recommended that you set this up by running:
+
+1) `pip install pre-commit`
+2) `pre-commit install`
