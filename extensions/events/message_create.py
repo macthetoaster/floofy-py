@@ -50,7 +50,7 @@ class MessageCreateExtension(Extension):
 
         # Send the message
         await msg.channel.send(
-            f"> {user} {formatted_reply} {action_emoji}",
+            f"> **{user}** {formatted_reply} {action_emoji}",
             allowed_mentions=AllowedMentions.none()
         )
 
