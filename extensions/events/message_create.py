@@ -40,7 +40,7 @@ class MessageCreateExtension(Extension):
         receivers = self._get_receivers(msg, " ".join(args))
 
         if receivers is None:
-            self_reply = f"> {user} {actions[action]['self']} {actions[action]['emoji']}"
+            self_reply = f"> **{user}** {actions[action]['self']} {actions[action]['emoji']}"
             return await msg.channel.send(self_reply)
 
         # Format the reply if there are any receivers
