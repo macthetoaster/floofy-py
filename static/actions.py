@@ -125,10 +125,21 @@ actions = {
             "shyly snuggles {receivers}, so soft!",
             "envelops {receivers} in their floof and snuggles them!"
         ]
+    },
+    "bellyrub": {
+        "self": "rubs their own belly! Someone's hungy~",
+        "emoji": "<:cattohuggies:738051434116808704>",
+        "with_receivers": [
+            "sofly rubs {receivers} belly~",
+            "rubs {receivers} belly",
+            "sneakily walks towards {receivers} and rubs their belly!",
+            "shyly pats {receivers} on the shoulder and rubs their belly~"
+        ]
     }
 }
-
 
 # Aliases
 actions["pet"] = actions["pat"]
 actions["feed"] = actions["food"]
+actions["br"] = actions["bellyrub"]
+actions["rubbelly"] = actions["bellyrub"]
