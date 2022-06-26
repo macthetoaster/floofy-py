@@ -9,7 +9,7 @@ class PingExtension(Extension):
     bot: FloofyClient
 
     @prefixed_command(name="ping")
-    async def ping_cmd(self, ctx: PrefixedContext):
+    async def ping_cmd(self, ctx: PrefixedContext) -> None:
         latency = self.bot.latency * 1000
         avatar_url = self.bot.user.avatar.url
 

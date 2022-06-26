@@ -17,7 +17,6 @@ class MessageCreateExtension(Extension):
     @listen()
     async def on_message_create(self, event: MessageCreate) -> None:
         msg = event.message
-        print(msg.content)
 
         # Check if the message starts with the prefix
         prefixed_message = False
