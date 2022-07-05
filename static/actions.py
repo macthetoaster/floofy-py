@@ -128,12 +128,24 @@ actions = {
     },
     "bellyrub": {
         "self": "rubs their own belly! Someone's hungy~",
-        "emoji": "<:cattohuggies:738051434116808704>",
+        "emoji": "<:uwu:736628159709052978>",
         "with_receivers": [
             "sofly rubs {receivers} belly~",
             "rubs {receivers} belly",
             "sneakily walks towards {receivers} and rubs their belly!",
             "shyly pats {receivers} on the shoulder and rubs their belly~"
+        ]
+    },
+    "cuddle": {
+        "self": "embraces themselves in a warm cuddle~",
+        "emoji": "<:cattohuggies:738051434116808704>",
+        "with_receivers": [
+            "cuddles {receivers}!",
+            "embraces {receivers} in a warm cuddle!",
+            "softly cuddles {receivers}",
+            "pokes {receivers} on the shoulder and cuddles them~",
+            "locks {receivers} in a tight, warm cuddle~ So soft!",
+            "grabs {receivers} and tightly cuddles them!"
         ]
     }
 }
