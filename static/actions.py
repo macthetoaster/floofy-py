@@ -147,6 +147,18 @@ actions = {
             "locks {receivers} in a tight, warm cuddle~ So soft!",
             "grabs {receivers} and tightly cuddles them!"
         ]
+    },
+    "nibble": {
+        "self": "nibbles their own arm! Owie!",
+        "emoji": "<:meow_nom:975066852969549854>",
+        "with_receivers": [
+            "gently nibbles {receivers}!",
+            "nibbles {receivers} on the ear~",
+            "approaches {receivers} and nibbles them on the arm~",
+            "walks towards {receivers} and softly nibbles them",
+            "nibbles {receivers}!",
+            "looks at {receivers} and nibbles them!"
+        ]
     }
 }
 
