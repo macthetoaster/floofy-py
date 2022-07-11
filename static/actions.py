@@ -59,7 +59,7 @@ actions = {
             "gives multiple kisses to {receivers}!",
             "shyly walks towards {receivers} and kisses them!",
             "taps {receivers} on the shoulder and kisses them!",
-            "hold {receivers} arm and hold their head, time for a kiss~"
+            "holds {receivers} arm and their head, time for a kiss~"
         ]
     },
     "food": {
@@ -75,7 +75,7 @@ actions = {
             "bakes a big :cake: for {receivers}!",
             "shares some :cookie: with {receivers}! So generous!",
             "cooks some fine :cut_of_meat: for {receivers}! What a chef~",
-            "offers a cucumber for {receivers}? Might as well enjoy it before it goes bad ;3"
+            "offers a cucumber to {receivers}? Might as well enjoy it before it goes bad ;3"
         ]
     },
     "bonk": {
@@ -86,7 +86,7 @@ actions = {
             "gives {receivers} a big bonk on the head!",
             "walks up to {receivers} and bonks them!",
             "sneakily bonks {receivers}! Ouchies!",
-            "bonks {receivers} using scout's bat! Where did they get that from?"
+            "bonks {receivers} using Scout's bat! Where did they get that from?"
         ]
     },
     "slap": {
@@ -162,7 +162,7 @@ actions = {
             "walks towards {receivers} and softly nibbles them",
             "nibbles {receivers}!",
             "looks at {receivers} and nibbles them!",
-            "walks behind {receivers} and nibble on their tail~"
+            "walks behind {receivers} and nibbles on their tail~"
         ]
     }
 }
