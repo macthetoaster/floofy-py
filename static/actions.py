@@ -58,7 +58,8 @@ actions = {
             "smooches {receivers}",
             "gives multiple kisses to {receivers}!",
             "shyly walks towards {receivers} and kisses them!",
-            "taps {receivers} on the shoulder and kisses them!"
+            "taps {receivers} on the shoulder and kisses them!",
+            "hold {receivers} arm and hold their head, time for a kiss~"
         ]
     },
     "food": {
@@ -73,7 +74,8 @@ actions = {
             "bakes some :cupcake: for {receivers}!",
             "bakes a big :cake: for {receivers}!",
             "shares some :cookie: with {receivers}! So generous!",
-            "cooks some fine :cut_of_meat: for {receivers}! What a chef~"
+            "cooks some fine :cut_of_meat: for {receivers}! What a chef~",
+            "offers a cucumber for {receivers}? Might as well enjoy it before it goes bad ;3"
         ]
     },
     "bonk": {
@@ -83,7 +85,8 @@ actions = {
             "bonks {receivers}! Ow!",
             "gives {receivers} a big bonk on the head!",
             "walks up to {receivers} and bonks them!",
-            "sneakily bonks {receivers}! Ouchies!"
+            "sneakily bonks {receivers}! Ouchies!",
+            "bonks {receivers} using scout's bat! Where did they get that from?"
         ]
     },
     "slap": {
@@ -96,7 +99,8 @@ actions = {
             "beats some sense into {receivers}!",
             "whacks {receivers} on the face! Ouchies!",
             "slaps {receivers} leaving a big red mark! Ow!",
-            "gives {receivers} a real good slappin'!"
+            "gives {receivers} a real good slappin'!",
+            "gives a good 'ol smacc to {receivers}!"
         ]
     },
     "bite": {
@@ -157,7 +161,8 @@ actions = {
             "approaches {receivers} and nibbles them on the arm~",
             "walks towards {receivers} and softly nibbles them",
             "nibbles {receivers}!",
-            "looks at {receivers} and nibbles them!"
+            "looks at {receivers} and nibbles them!",
+            "walks behind {receivers} and nibble on their tail~"
         ]
     }
 }
