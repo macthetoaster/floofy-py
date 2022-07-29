@@ -146,7 +146,7 @@ class OwnerOnly(Extension):
             self.bot.reload_extension(path_to_reload)
             ext_reload_str = f"Extension **{extension_name}** successfully reloaded!"
         except ModuleNotFoundError:
-            ext_reload_str = f"Extension **{extension_name}** was not found!"
+            ext_reload_str = f"Extension **{extension_name}** was not found."
 
         await ext_reload_msg.edit(ext_reload_str)
         await ext_reload_msg.delete(10)
