@@ -140,18 +140,15 @@ class OwnerOnly(Extension):
             return
 
         ext_reload_msg = await ctx.send(f"Reloading extension **{extension_name}**, please hold...")
-        ext_to_reload = self.bot.ext.get(extension_name)
+        path_to_reload = f"extensions.{extension_name}"
 
-        if ext_to_reload is None:
-            await ext_reload_msg.edit(f"Extension **{extension_name}** was not found!")
-            return await ext_reload_msg.delete(10)
+        try:
+            self.bot.reload_extension(path_to_reload)
+            ext_reload_str = f"Extension **{extension_name}** successfully reloaded!"
+        except ModuleNotFoundError:
+            ext_reload_str = f"Extension **{extension_name}** was not found!"
 
-        trailing_string = -(len(extension_name) + 31)
-        path_to_reload = str(ext_to_reload)[1:trailing_string]
-
-        self.bot.reload_extension(path_to_reload)
-
-        await ext_reload_msg.edit(f"Extension **{extension_name}** successfully reloaded!")
+        await ext_reload_msg.edit(ext_reload_str)
         await ext_reload_msg.delete(10)
 
 
