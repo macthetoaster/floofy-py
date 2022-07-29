@@ -13,3 +13,4 @@ class FloofyClient(Client):
         """Gets triggered on startup"""
 
         self.logger.info(f"{os.getenv('PROJECT_NAME')} - Startup Finished!")
+        await self.synchronise_interactions(delete_commands=True)
