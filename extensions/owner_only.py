@@ -1,5 +1,6 @@
 import asyncio
 import datetime
+import os
 
 import naff
 from naff import Embed, InteractionContext, slash_command, slash_option, OptionTypes, Button, Message, Timestamp, \
@@ -8,6 +9,8 @@ from naff import Embed, InteractionContext, slash_command, slash_option, OptionT
 from core.base import FloofyClient
 from core.extensions_loader import reload_all_extensions
 from static.constants import embed_colors
+
+support_guilds = os.getenv("SUPPORT_GUILDS").split(",")
 
 
 class OwnerOnly(Extension):
@@ -21,7 +24,8 @@ class OwnerOnly(Extension):
 
     @slash_command(
         name="botstatus",
-        description="OWNER ONLY | Check the status of the bot"
+        description="OWNER ONLY | Check the status of the bot",
+        scopes=support_guilds
     )
     async def bot_status(self, ctx: InteractionContext):
         now = datetime.datetime.now()
@@ -78,7 +82,8 @@ class OwnerOnly(Extension):
 
     @slash_command(
         name="generateinvite",
-        description="OWNER ONLY | Generate an invite link for the bot"
+        description="OWNER ONLY | Generate an invite link for the bot",
+        scopes=support_guilds
     )
     @slash_option(
         name="admin_perms",
@@ -109,7 +114,8 @@ class OwnerOnly(Extension):
 
     @slash_command(
         name="shutdown",
-        description="OWNER ONLY | Shuts the bot down."
+        description="OWNER ONLY | Shuts the bot down.",
+        scopes=support_guilds
     )
     async def shutdown(self, ctx: InteractionContext):
         shutdown_timestamp = datetime.datetime.now() + datetime.timedelta(seconds=15)
@@ -121,7 +127,8 @@ class OwnerOnly(Extension):
 
     @slash_command(
         name="reload",
-        description="OWNER ONLY | Reload the bot's extensions"
+        description="OWNER ONLY | Reload the bot's extensions",
+        scopes=support_guilds
     )
     @slash_option(
         name="extension_name",
